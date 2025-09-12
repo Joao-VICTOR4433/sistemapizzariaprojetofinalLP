@@ -1,0 +1,37 @@
+=== RELATÓRIO DE PEDIDOS ===
+Data de geração: 12/09/2025 18:59
+
+Cliente: joao
+Rodízio: Sim
+Produtos:
+- Rodízio de Pizza x1 R$60.0
+Total: R$60.0
+Pagamento: pix
+Finalizado: true
+------------------------------
+Cliente: joao
+Rodízio: Sim
+Produtos:
+- Rodízio de Pizza x1 R$60.0
+Total: R$60.0
+Pagamento: pix
+Finalizado: true
+------------------------------
+Cliente: joao
+Endereço de entrega: rua auroa
+Produtos:
+- pizza x2 R$88.0
+- suco x4 R$28.0
+Total: R$116.0
+Pagamento: cartão 
+Finalizado: true
+------------------------------
+Cliente: joao
+Endereço de entrega: rua auroa
+Produtos:
+- pizza x2 R$88.0
+- suco x4 R$28.0
+Total: R$116.0
+Pagamento: cartão 
+Finalizado: true
+------------------------------
