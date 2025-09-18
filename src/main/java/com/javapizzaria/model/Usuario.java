@@ -1,4 +1,3 @@
-// Usuario.java
 package com.javapizzaria.model;
 
 public abstract class Usuario {
