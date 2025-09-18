@@ -11,5 +11,4 @@ public class Gerente extends Funcionario {
         return "[GERENTE] " + super.toString();
     }
 
-    // Ponto já herdado de Funcionario
 }
