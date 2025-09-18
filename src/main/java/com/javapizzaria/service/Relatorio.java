@@ -12,12 +12,12 @@ import java.util.List;
 public class Relatorio {
     private static final String PASTA_RELATORIOS = "./relatorios/";
 
-    // Salvar relatório em TXT
+    
     public static File salvarRelatorioDiario(List<Pedido> pedidos, String nomeArquivo) throws IOException {
         File pasta = new File(PASTA_RELATORIOS);
         if (!pasta.exists()) pasta.mkdirs();
 
-        // Garante extensão .txt
+        
         if (!nomeArquivo.endsWith(".txt")) {
             nomeArquivo += ".txt";
         }
@@ -46,7 +46,6 @@ public class Relatorio {
         return arquivo;
     }
 
-    // Listar relatórios salvos
     public static List<File> listarRelatorios() {
         File pasta = new File(PASTA_RELATORIOS);
         if (!pasta.exists()) return new ArrayList<>();
@@ -54,7 +53,6 @@ public class Relatorio {
         return arquivos != null ? Arrays.asList(arquivos) : new ArrayList<>();
     }
 
-    // Visualizar conteúdo de um relatório
     public static String visualizarRelatorio(int index) throws IOException {
         List<File> arquivos = listarRelatorios();
         if (index < 0 || index >= arquivos.size()) return "Relatório não encontrado.";
