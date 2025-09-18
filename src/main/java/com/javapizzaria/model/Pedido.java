@@ -9,7 +9,6 @@ public class Pedido {
     private String formaPagamento;
     private boolean finalizado = false;
 
-    // Novos campos adicionados
     private boolean rodizio = false;
     private String enderecoEntrega = null;
 
@@ -32,7 +31,7 @@ public class Pedido {
         this.finalizado = true;
     }
 
-    // Getters e setters para os novos campos
+    
     public boolean isRodizio() { return rodizio; }
     public void setRodizio(boolean rodizio) { this.rodizio = rodizio; }
 
