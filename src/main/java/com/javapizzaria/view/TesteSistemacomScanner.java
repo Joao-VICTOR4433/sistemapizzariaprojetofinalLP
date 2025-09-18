@@ -13,10 +13,10 @@ public class TesteSistemacomScanner {
         Scanner scanner = new Scanner(System.in);
         SistemaPizzaria sistema = new SistemaPizzaria();
 
-        // Cadastrar produtos fixos (incluindo Rodízio)
+        // Cadastrar 
         sistema.cadastrarComida("Pizza Calabresa", 35.0, "Pizza");
         sistema.cadastrarComida("Pizza Mussarela", 30.0, "Pizza");
-        sistema.cadastrarComida("Rodízio de Pizza", 60.0, "Rodízio"); // Rodízio com valor de R$ 60
+        sistema.cadastrarComida("Rodízio de Pizza", 60.0, "Rodízio"); 
         sistema.cadastrarBebida("Coca-Cola", 6.0, 500);
         sistema.cadastrarBebida("Suco de Laranja", 5.0, 300);
 
@@ -32,7 +32,7 @@ public class TesteSistemacomScanner {
             System.out.print("Escolha: ");
 
             int opc = scanner.hasNextInt() ? scanner.nextInt() : -1;
-            scanner.nextLine(); // limpar ENTER
+            scanner.nextLine(); 
 
             switch (opc) {
                 case 1 -> cadastrarCliente(scanner, sistema);
@@ -77,7 +77,7 @@ public class TesteSistemacomScanner {
 
         System.out.print("Preço: R$ ");
         double preco = scanner.nextDouble();
-        scanner.nextLine(); // limpar ENTER
+        scanner.nextLine(); 
 
         System.out.print("Tipo (pizza/bebida/massa/sobremesa/rodízio): ");
         String tipo = scanner.nextLine().toLowerCase();
@@ -94,7 +94,7 @@ public class TesteSistemacomScanner {
                 case "bebida" -> {
                     System.out.print("Volume (ml): ");
                     double volume = scanner.nextDouble();
-                    scanner.nextLine(); // limpar ENTER
+                    scanner.nextLine(); 
                     sistema.cadastrarBebida(nome, preco, volume);
                     System.out.println("✅ Bebida cadastrada com sucesso!");
                 }
@@ -130,14 +130,14 @@ public class TesteSistemacomScanner {
             return;
         }
 
-        // Perguntar se é rodízio
+        
         System.out.print("Deseja rodízio? (s/n): ");
         boolean isRodizio = scanner.nextLine().equalsIgnoreCase("s");
 
         if (isRodizio) {
             pedido.setRodizio(true);
 
-            // Buscar o produto Rodízio no sistema e adicionar ao pedido
+            
             Produto rodizioProduto = null;
             for (Produto p : sistema.getProdutos()) {
                 if (p.getNome().equalsIgnoreCase("Rodízio de Pizza")) {
@@ -154,14 +154,14 @@ public class TesteSistemacomScanner {
             }
         }
 
-        // Perguntar se é entrega
+        
         System.out.print("Entrega? (s/n): ");
         if (scanner.nextLine().equalsIgnoreCase("s")) {
             System.out.print("Informe o endereço de entrega: ");
             pedido.setEnderecoEntrega(scanner.nextLine());
         }
 
-        // Se NÃO for rodízio, permitir adicionar outros produtos
+        
         if (!isRodizio) {
             boolean adicionarProdutos = true;
             while (adicionarProdutos) {
