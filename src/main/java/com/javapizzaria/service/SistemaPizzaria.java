@@ -48,7 +48,7 @@ public class SistemaPizzaria {
                 .orElse(null);
     }
 
-    // ---------------- Pedidos ----------------
+    //Pedidos 
     public Pedido novoPedido(Cliente cliente) throws Exception {
         if (!clientes.contains(cliente)) {
             throw new Exception("Cliente não cadastrado: " + cliente.getNome());
