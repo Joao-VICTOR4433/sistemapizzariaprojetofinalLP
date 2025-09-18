@@ -1,4 +1,3 @@
-// Comida.java
 package com.javapizzaria.model;
 
 public class Comida extends Produto {
