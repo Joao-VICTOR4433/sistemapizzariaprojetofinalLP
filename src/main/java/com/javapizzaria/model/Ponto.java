@@ -5,9 +5,7 @@ import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Classe para controle de ponto de funcionários.
- */
+
 public class Ponto {
 
     private Funcionario funcionario;
@@ -17,13 +15,13 @@ public class Ponto {
         this.funcionario = funcionario;
     }
 
-    // Marca entrada
+    
     public void registrarEntrada() {
         registros.add(new Registro(LocalDateTime.now(), null));
         System.out.println("✅ Entrada registrada para " + funcionario.getNome() + " às " + LocalDateTime.now());
     }
 
-    // Marca saída
+    
     public void registrarSaida() {
         for (int i = registros.size() - 1; i >= 0; i--) {
             Registro r = registros.get(i);
@@ -36,7 +34,7 @@ public class Ponto {
         System.out.println("⚠ Nenhuma entrada pendente para " + funcionario.getNome());
     }
 
-    // Calcula total de horas trabalhadas
+    
     public double totalHoras() {
         double total = 0;
         for (Registro r : registros) {
@@ -48,7 +46,7 @@ public class Ponto {
         return total;
     }
 
-    // Mostra registros de ponto
+    
     public void listarRegistros() {
         System.out.println("\n📌 Registros de ponto de " + funcionario.getNome() + ":");
         for (Registro r : registros) {
@@ -58,7 +56,7 @@ public class Ponto {
         System.out.printf("Total de horas trabalhadas: %.2f horas\n", totalHoras());
     }
 
-    // Classe interna para armazenar entrada e saída
+    
     private static class Registro {
         private LocalDateTime entrada;
         private LocalDateTime saida;
