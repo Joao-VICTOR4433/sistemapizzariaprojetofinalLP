@@ -63,7 +63,6 @@ public class SistemaPizzariaImpl implements SistemaInterface {
         System.out.println("📄 Relatório gerado em: " + caminhoArquivo);
     }
 
-    // Getters para acesso externo
     public List<Cliente> getClientes() { return clientes; }
     public List<Pedido> getPedidos() { return pedidos; }
 }
