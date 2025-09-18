@@ -1,9 +1,5 @@
 package com.javapizzaria.model;
 
-/**
- * Classe abstrata Produto.
- * Representa qualquer item do cardápio: comida ou bebida.
- */
 public abstract class Produto {
     private String nome;
     private double preco;
