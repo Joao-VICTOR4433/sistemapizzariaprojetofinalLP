@@ -1,4 +1,3 @@
-// Cliente.java
 package com.javapizzaria.model;
 
 public class Cliente extends Usuario {
