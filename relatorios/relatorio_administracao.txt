@@ -1,0 +1,9 @@
+=== RELATÓRIO DIÁRIO ===
+Data de geração: 21/09/2025 05:48
+
+=== PEDIDOS ===
+Nenhum pedido registrado.
+
+=== REGISTROS DE PONTO ===
+Funcionário: j - Total horas: 0,00
+Funcionário: k - Total horas: 0,00

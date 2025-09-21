@@ -1,0 +1,12 @@
+=== RELATÓRIO DIÁRIO ===
+Data de geração: 21/09/2025 05:46
+
+=== PEDIDOS ===
+Pedido de joao:
+Rodízio de Pizza x1
+Rodízio: Sim
+
+------------------------------
+
+=== REGISTROS DE PONTO ===
+Nenhum funcionário registrado.
