@@ -10,7 +10,6 @@ public class SistemaPizzaria {
     private final List<Produto> produtos;
     private final List<Pedido> pedidos;
 
-    // Novo: lista de funcionários para relatórios
     private final List<Funcionario> funcionarios;
 
     public SistemaPizzaria() {
@@ -20,11 +19,9 @@ public class SistemaPizzaria {
         this.funcionarios = new ArrayList<>();
     }
 
-    // Clientes
     public void cadastrarCliente(Cliente c) { clientes.add(c); }
     public List<Cliente> getClientes() { return clientes; }
 
-    // Produtos
     public void cadastrarComida(String nome, double preco, String tipo) {
         produtos.add(new Comida(nome, preco, tipo));
     }
@@ -35,7 +32,6 @@ public class SistemaPizzaria {
 
     public List<Produto> getProdutos() { return produtos; }
 
-    // Pedidos
     public Pedido novoPedido(Cliente cliente) {
         Pedido pedido = new Pedido(cliente);
         pedidos.add(pedido);
@@ -50,7 +46,6 @@ public class SistemaPizzaria {
 
     public List<Pedido> getPedidos() { return pedidos; }
 
-    // Funcionários
     public void cadastrarFuncionario(Funcionario f) { funcionarios.add(f); }
     public List<Funcionario> getFuncionarios() { return funcionarios; }
 }

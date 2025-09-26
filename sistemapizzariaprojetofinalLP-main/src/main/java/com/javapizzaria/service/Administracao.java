@@ -17,7 +17,6 @@ public class Administracao {
         this.pedidos = new ArrayList<>();
     }
 
-    // Funcionários
     public void contratarFuncionario(String nome, String cpf, String turno, double salario, boolean isGerente) {
         Funcionario f = isGerente ? new Gerente(nome, cpf, turno, LocalDate.now(), salario)
                 : new Funcionario(nome, cpf, turno, LocalDate.now(), salario);
@@ -65,6 +64,5 @@ public class Administracao {
 
     public List<Funcionario> getFuncionarios() { return funcionarios; }
 
-    // Pedidos (para relatório)
     public List<Pedido> getPedidos() { return pedidos; }
 }

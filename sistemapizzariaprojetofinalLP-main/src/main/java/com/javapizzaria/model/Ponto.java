@@ -11,7 +11,7 @@ public class Ponto {
     private LocalDateTime entrada;
     private LocalDateTime saida;
     private double horasTrabalhadas;
-    private final List<String> registros; // Lista de registros de ponto
+    private final List<String> registros;
 
     private final DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm");
 
@@ -44,6 +44,10 @@ public class Ponto {
         return horasTrabalhadas;
     }
 
+    public void setHorasManuais(double horas) {
+        this.horasTrabalhadas = horas;
+    }
+
     public void listarRegistros() {
         if (registros.isEmpty()) {
             System.out.println("Nenhum registro de ponto encontrado.");
@@ -54,4 +58,5 @@ public class Ponto {
             System.out.println(r);
         }
     }
+
 }

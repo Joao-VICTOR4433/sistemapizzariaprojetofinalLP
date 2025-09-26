@@ -13,7 +13,6 @@ public class TesteSistemacomScanner {
         Scanner scanner = new Scanner(System.in);
         SistemaPizzaria sistema = new SistemaPizzaria();
 
-        // Cadastrar produtos iniciais
         sistema.cadastrarComida("Pizza Calabresa", 35.0, "Pizza");
         sistema.cadastrarComida("Pizza Mussarela", 30.0, "Pizza");
         sistema.cadastrarComida("Rodízio de Pizza", 60.0, "Rodízio");
@@ -220,7 +219,6 @@ public class TesteSistemacomScanner {
             System.out.println("\n=== GERAR RELATÓRIO ===");
             String nomeArquivo = "relatorio_pedidos.txt";
 
-            // Adicionando funcionários no relatório
             Relatorio.salvarRelatorioDiario(sistema.getPedidos(), sistema.getFuncionarios(), nomeArquivo);
 
             System.out.println("✅ Relatório gerado com sucesso!");
@@ -230,5 +228,6 @@ public class TesteSistemacomScanner {
         } catch (Exception e) {
             System.out.println("❌ Erro ao gerar relatório: " + e.getMessage());
         }
+
     }
 }

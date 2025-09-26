@@ -1,9 +1,6 @@
-=== RELATÓRIO DIÁRIO ===
-Data de geração: 21/09/2025 05:48
+=== RELATÓRIO DE FUNCIONÁRIOS ===
+Funcionário: MATEUS | CPF: 70334543221 | Turno: NOITE | Salário: 1200.0 | Total horas: 0,00
+Funcionário: CESAR | CPF: 4002892200 | Turno: MANHA | Salário: 1450.0 | Total horas: 0,00
+Funcionário: ivanildo | CPF: 45678998765 | Turno: Manha | Salário: 1500.0 | Total horas: 0,00
 
-=== PEDIDOS ===
-Nenhum pedido registrado.
-
-=== REGISTROS DE PONTO ===
-Funcionário: j - Total horas: 0,00
-Funcionário: k - Total horas: 0,00
+=== RELATÓRIO DE PEDIDOS ===

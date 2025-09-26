@@ -1,12 +1,6 @@
-=== RELATÓRIO DIÁRIO ===
-Data de geração: 21/09/2025 05:46
+=== RELATÓRIO DE FUNCIONÁRIOS ===
 
-=== PEDIDOS ===
-Pedido de joao:
-Rodízio de Pizza x1
-Rodízio: Sim
+=== RELATÓRIO DE PEDIDOS ===
+Pedido de MATEUS:
+Suco de Laranja x3
 
-------------------------------
-
-=== REGISTROS DE PONTO ===
-Nenhum funcionário registrado.

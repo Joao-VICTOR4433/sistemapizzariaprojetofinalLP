@@ -1,4 +1,3 @@
-// Usuario.java
 package com.javapizzaria.model;
 
 import java.util.concurrent.atomic.AtomicInteger;
